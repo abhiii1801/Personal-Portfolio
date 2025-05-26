@@ -282,7 +282,7 @@ nav.scrolled {
 
 /* Section Styles */
 section {
-  padding: 120px 0;
+  /* padding: 120px 0; */
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
@@ -299,7 +299,7 @@ full-width-section {
 .section-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   text-align: center;
   background: linear-gradient(135deg, #ffffff 0%, #4096ff 100%);
   -webkit-background-clip: text;
@@ -341,12 +341,13 @@ full-width-section {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 30px 30px;
+  padding: 40px;
 }
 
 .skill-category {
   background: rgba(255, 255, 255, 0.05);
-  padding: 40px 30px;
+  padding: 40px;
   border-radius: 20px;
   text-align: center;
   transition: all 0.3s ease;
@@ -355,26 +356,10 @@ full-width-section {
   overflow: hidden;
 }
 
-.skill-category::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #4096ff, #1890ff);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.skill-category:hover::before {
-  transform: scaleX(1);
-}
-
 .skill-category:hover {
-  transform: translateY(-10px);
-  background: rgba(64, 150, 255, 0.1);
-  border-color: rgba(64, 150, 255, 0.3);
+  transform: translateY(-5px) scale(1.02);
+    background: rgba(64, 150, 255, 0.1);
+    border-color: rgba(64, 150, 255, 0.3);
 }
 
 .skill-icon {
@@ -461,6 +446,12 @@ full-width-section {
 .experience-company {
   font-size: 1.2rem;
   color: #4096ff;
+  font-weight: 500;
+  padding: 2px 0;
+}
+
+.experience-company-location {
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -695,9 +686,10 @@ full-width-section {
 /* Footer */
 footer {
   background: #000000;
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
   border-top: 1px solid rgba(64, 150, 255, 0.1);
+  margin-top: 40px;
 }
 
 footer p {
@@ -791,8 +783,6 @@ footer p {
     grid-template-columns: 300px 1fr;
     gap: 60px;
     align-items: center;
-    margin-bottom: 80px;
-    padding: 60px 0;
 }
 
 .about-photo {
@@ -916,6 +906,13 @@ footer p {
     background: rgba(255, 255, 255, 0.03);
     border-radius: 15px;
     border-left: 4px solid #4096ff;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover{
+    background: rgba(64, 150, 255, 0.1);
+    border-color: rgba(64, 150, 255, 0.3);
+    transform: translateX(10px);
 }
 
 .education-item h4 {
@@ -924,6 +921,15 @@ footer p {
     margin-bottom: 10px;
     font-weight: 600;
 }
+
+.education-item h5 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
 
 .institution {
     font-size: 1.1rem;
@@ -936,12 +942,6 @@ footer p {
     color: #888888;
     font-size: 0.95rem;
     margin-bottom: 5px;
-}
-
-.gpa {
-    color: #cccccc;
-    font-size: 0.95rem;
-    font-weight: 500;
 }
 
 .certifications {
@@ -980,9 +980,9 @@ footer p {
 
 /* Achievements Card Styles */
 .achievement-list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 30px; /* 25px vertical gap, 30px horizontal gap */
 }
 
 .achievement-item {
@@ -995,13 +995,20 @@ footer p {
 }
 
 .achievement-item:hover {
+    transform: translateY(-5px) scale(1.02);
     background: rgba(64, 150, 255, 0.1);
     border-color: rgba(64, 150, 255, 0.3);
-    transform: translateX(10px);
 }
 
 .achievement-item h4 {
     font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.achievement-item h5 {
+    font-size: 1rem;
     color: #ffffff;
     margin-bottom: 10px;
     font-weight: 600;

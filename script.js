@@ -40,28 +40,6 @@
             observer.observe(el);
         });
 
-        // Enhanced hover effects for project cards
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-15px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Interactive skill category effects
-        document.querySelectorAll('.skill-category').forEach(skill => {
-            skill.addEventListener('mouseenter', () => {
-                skill.style.transform = 'translateY(-10px) rotateY(5deg)';
-            });
-            
-            skill.addEventListener('mouseleave', () => {
-                skill.style.transform = 'translateY(0) rotateY(0deg)';
-            });
-        });
-
         // Dynamic background effect for hero
         const hero = document.querySelector('.hero');
         let mouseX = 0;
@@ -83,7 +61,7 @@
         // Typing effect for hero greeting
         const greeting = document.querySelector('.hero-greeting');
         const originalGreeting = greeting.textContent;
-        greeting.textContent = '';
+        greeting.textContent = ' 👋 ';
         
         setTimeout(() => {
             let i = 0;

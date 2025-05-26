@@ -776,3 +776,426 @@ footer p {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* About Page Specific Styles */
+
+/* Page content wrapper */
+.page-content {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+/* About Hero Section */
+.about-hero {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 60px 0;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4096ff, #1890ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    color: #ffffff;
+    box-shadow: 0 0 60px rgba(64, 150, 255, 0.3);
+    animation: profileFloat 6s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(255, 255, 255, 0.2) 0%,
+        transparent 50%
+    );
+    border-radius: 50%;
+}
+
+@keyframes profileFloat {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(2deg);
+    }
+}
+
+.about-intro h3 {
+    font-size: 2.5rem;
+    color: #4096ff;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* About Details Grid */
+.about-details-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.detail-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(64, 150, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.detail-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4096ff, #1890ff);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-10px);
+    background: rgba(64, 150, 255, 0.08);
+    border-color: rgba(64, 150, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.detail-card:hover::before {
+    transform: scaleX(1);
+}
+
+.detail-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #4096ff;
+}
+
+.detail-card > h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Education Card Styles */
+.education-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border-left: 4px solid #4096ff;
+}
+
+.education-item h4 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.institution {
+    font-size: 1.1rem;
+    color: #4096ff;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.duration {
+    color: #888888;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.gpa {
+    color: #cccccc;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.certifications {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(64, 150, 255, 0.1);
+    border-radius: 12px;
+}
+
+.certifications h5 {
+    color: #4096ff;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.certifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certifications li {
+    color: #cccccc;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.certifications li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #4096ff;
+    font-size: 0.8rem;
+}
+
+/* Achievements Card Styles */
+.achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.achievement-item {
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1px solid rgba(64, 150, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.achievement-item:hover {
+    background: rgba(64, 150, 255, 0.1);
+    border-color: rgba(64, 150, 255, 0.3);
+    transform: translateX(10px);
+}
+
+.achievement-item h4 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.achievement-item p {
+    color: #aaaaaa;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.achievement-date {
+    font-size: 0.9rem;
+    color: #4096ff;
+    font-weight: 500;
+    padding: 4px 12px;
+    background: rgba(64, 150, 255, 0.2);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Hobbies Card Styles */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.hobby-item {
+    text-align: center;
+    padding: 25px 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1px solid rgba(64, 150, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: rgba(64, 150, 255, 0.1);
+    border-color: rgba(64, 150, 255, 0.3);
+}
+
+.hobby-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hobby-item h4 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.hobby-item p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Fun Facts Card Styles */
+.fun-facts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fun-fact {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1px solid rgba(64, 150, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.fun-fact:hover {
+    background: rgba(64, 150, 255, 0.1);
+    border-color: rgba(64, 150, 255, 0.3);
+    transform: translateX(10px);
+}
+
+.fact-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4096ff;
+    background: rgba(64, 150, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fun-fact p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 1024px) {
+    .about-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hobbies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        padding-top: 80px;
+    }
+    
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 40px 0;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        font-size: 5rem;
+    }
+    
+    .about-intro h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .about-intro p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    
+    .detail-card {
+        padding: 30px 25px;
+    }
+    
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hobby-item {
+        padding: 20px 15px;
+    }
+    
+    .fun-fact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .fact-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        font-size: 4rem;
+    }
+    
+    .about-intro h3 {
+        font-size: 1.8rem;
+    }
+    
+    .detail-card {
+        padding: 25px 20px;
+    }
+    
+    .detail-card > h3 {
+        font-size: 1.5rem;
+    }
+    
+    .education-item,
+    .achievement-item,
+    .fun-fact {
+        padding: 20px;
+    }
+}

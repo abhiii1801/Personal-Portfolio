@@ -876,6 +876,9 @@ footer p {
   .nav-container {
     padding: 0 20px;
   }
+  .logo{
+    display: none;
+  }
 
   .nav-links {
     gap: 20px;
@@ -1336,8 +1339,8 @@ footer p {
 
 /* Responsive Design for About Page */
 @media (max-width: 1024px) {
-  .about-details-grid {
-    grid-template-columns: 1fr;
+  .about-details-grid, .achievement-list, .contact-info {
+    grid-template-columns: 2fr;
   }
 
   .hobbies-grid {

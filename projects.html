@@ -26,122 +26,495 @@
         <h2 class="section-title fade-in">Data Projects</h2>
         <p class="section-subtitle fade-in">Showcasing my data engineering and science capabilities</p>
         <div class="projects-grid">
-            <div class="project-card fade-in">
-                <div class="project-image">📈</div>
-                <div class="project-content">
-                    <h3>Real-time Sales Analytics Pipeline</h3>
-                    <p>Built a comprehensive ETL pipeline that processes real-time sales data from multiple sources, performs data validation, and generates actionable business insights. Implemented automated alerting for anomaly detection.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Apache Kafka</span>
-                        <span class="tech-tag">Apache Spark</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Docker</span>
+            <!-- Sales Dashboard -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="sales">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="projects/sales/1.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/sales/2.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/sales/3.png" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(event, this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(event, this, 1)">›</button>
+                        <div class="carousel-indicators"></div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo →</a>
-                        <a href="#" class="project-link">GitHub →</a>
+                    <div class="project-content">
+                        <h3>Sales Dashboard</h3>
+                        <p>Interactive Power BI dashboard for retail chain analytics. Track $192M+ in sales, monitor KPIs, analyze products across 30 stores, and visualize customer behavior with regional insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">Data Modeling</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/Sales-Dashboard" target="_blank" class="project-link">GitHub →</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project-card fade-in">
-                <div class="project-image">🤖</div>
-                <div class="project-content">
-                    <h3>Customer Churn Prediction Model</h3>
-                    <p>Developed a machine learning model to predict customer churn with 89% accuracy. Used feature engineering, hyperparameter tuning, and deployed the model using Flask API for real-time predictions.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">XGBoost</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">AWS EC2</span>
+                <div class="project-card">
+                    <div class="project-carousel" data-project="cuims">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="projects/cuims/1.png" alt="CUIMS Dashboard">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/cuims/2.png" alt="Attendance Feature">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/cuims/3.png" alt="Profile Dashboard">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/cuims/4.png" alt="Timetable">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/cuims/5.png" alt="Timetable">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/cuims/6.png" alt="Timetable">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(event, this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(event, this, 1)">›</button>
+                        <div class="carousel-indicators"></div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo →</a>
-                        <a href="#" class="project-link">Notebook →</a>
+                    <div class="project-content">
+                        <h3>CUIMS Plus</h3>
+                        <p>A modern, student-friendly remake of the CUIMS portal with clean UI, faster performance, and smart features like attendance prediction, leave showcase, and profile dashboard with real-time data scraping.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Playwright</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Jinja2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/CUIMS-Plus" target="_blank" class="project-link">GitHub →</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project-card fade-in">
-                <div class="project-image">🌐</div>
-                <div class="project-content">
-                    <h3>Interactive Data Visualization Dashboard</h3>
-                    <p>Created a comprehensive dashboard for exploring COVID-19 data trends across different countries. Features interactive maps, time-series analysis, and predictive modeling capabilities using Streamlit.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">Plotly</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">APIs</span>
+                <!-- Ocean Hazard Reporter -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="ocean">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="projects/ocean/1.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/ocean/2.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/ocean/3.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/ocean/4.png" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(event, this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(event, this, 1)">›</button>
+                        <div class="carousel-indicators"></div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live App →</a>
-                        <a href="#" class="project-link">GitHub →</a>
+                    <div class="project-content">
+                        <h3>Ocean Hazard Reporter</h3>
+                        <p>Report, visualize, and track ocean hazards like oil spills and debris in real-time. Features interactive maps, severity filters, and admin dashboard for verification and management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Maps API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/OceanHazardReporter" target="_blank" class="project-link">GitHub →</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project-card fade-in">
-                <div class="project-image">🔍</div>
-                <div class="project-content">
-                    <h3>Big Data Processing Framework</h3>
-                    <p>Designed and implemented a scalable data processing framework using Apache Spark to handle petabytes of log data. Optimized query performance and reduced processing time by 60%.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Apache Spark</span>
-                        <span class="tech-tag">Scala</span>
-                        <span class="tech-tag">HDFS</span>
-                        <span class="tech-tag">Hive</span>
-                        <span class="tech-tag">Airflow</span>
+                <!-- F1 Race Analysis Dashboard -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="f1">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="projects/f1/3.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/f1/1.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/f1/2.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/f1/4.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/f1/5.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/f1/6.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/f1/7.png" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(event, this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(event, this, 1)">›</button>
+                        <div class="carousel-indicators"></div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Documentation →</a>
-                        <a href="#" class="project-link">GitHub →</a>
+                    <div class="project-content">
+                        <h3>F1 Race Analysis Dashboard</h3>
+                        <p>Comprehensive Formula 1 race analysis dashboard using FastF1 data. Compare drivers, visualize lap times, explore detailed race results with interactive charts and performance metrics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">FastF1</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/F1-Race-Analysis-Dashboard" target="_blank" class="project-link">GitHub →</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project-card fade-in">
-                <div class="project-image">💡</div>
-                <div class="project-content">
-                    <h3>Sentiment Analysis Engine</h3>
-                    <p>Built a real-time sentiment analysis system for social media data using NLP techniques. Processes thousands of tweets per minute and provides insights into public opinion trends.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NLTK</span>
-                        <span class="tech-tag">Transformers</span>
-                        <span class="tech-tag">Kafka</span>
-                        <span class="tech-tag">Redis</span>
+                <!-- Real-Time Air Quality Dashboard -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="realaqi">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="projects/realaqi/1.png" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(event, this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(event, this, 1)">›</button>
+                        <div class="carousel-indicators"></div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Demo →</a>
-                        <a href="#" class="project-link">Research Paper →</a>
+                    <div class="project-content">
+                        <h3>Real-Time Air Quality Dashboard</h3>
+                        <p>Live AQI monitoring system that collects Delhi air quality data, processes it using Kafka streaming, stores in PostgreSQL, and visualizes interactive trends and pollutant levels in Power BI.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Apache Kafka</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/Real-Time-Air-Quality-Dashboard" target="_blank" class="project-link">GitHub →</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project-card fade-in">
-                <div class="project-image">📊</div>
-                <div class="project-content">
-                    <h3>Financial Market Data Pipeline</h3>
-                    <p>Developed an automated system to collect, clean, and analyze financial market data from multiple APIs. Includes risk assessment models and portfolio optimization algorithms.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Alpha Vantage API</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Matplotlib</span>
-                        <span class="tech-tag">SQLite</span>
+                <!-- Movie Showcase -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="movie">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="projects/movie/1.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/movie/2.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/movie/3.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/movie/4.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/movie/5.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/movie/6.png" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(event, this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(event, this, 1)">›</button>
+                        <div class="carousel-indicators"></div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Dashboard →</a>
-                        <a href="#" class="project-link">GitHub →</a>
+                    <div class="project-content">
+                        <h3>Movie Showcase</h3>
+                        <p>Full-stack movie exploration app powered by TMDb API. Browse trending movies, search by title, filter by genre, manage favorites, and view detailed information with secure JWT authentication.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">TMDb API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/Movie-Showcase" target="_blank" class="project-link">GitHub →</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- SpendWise Expense Tracker -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="expense">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="projects/spend/1.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/spend/2.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/spend/3.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/spend/4.png" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(event, this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(event, this, 1)">›</button>
+                        <div class="carousel-indicators"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SpendWise Expense Tracker</h3>
+                        <p>Personal finance management app with secure authentication. Track accounts, expenses, incomes, and transfers with interactive visualizations using Plotly charts for effective budget management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Bcrypt</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/SpendWise-Expense-Tracker" target="_blank" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flight Booking System -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="flight">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="projects/flight/1.jpeg" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/flight/2.jpeg" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/flight/3.jpeg" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/flight/4.jpeg" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="projects/flight/5.jpeg" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(event, this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(event, this, 1)">›</button>
+                        <div class="carousel-indicators"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Flight Booking System</h3>
+                        <p>Modern full-stack flight management platform. Search available flights by route and date, book tickets seamlessly, manage bookings, and view history with secure authentication.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/Flight-Booking-System" target="_blank" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Management System -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Student Management System</h3>
+                        <p>Command-line college management system built with Go and MySQL. Manage student and teacher profiles, courses, attendance, grades, timetable, and fees with complete CRUD functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">CLI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhiii1801/Student-Management-System" target="_blank" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
     </main>
+    <!-- Lightbox for full-screen image viewing -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" onclick="closeLightbox()">✕</button>
+        <div class="lightbox-content">
+            <div class="lightbox-carousel">
+                <div class="lightbox-track" id="lightboxTrack"></div>
+                <button class="lightbox-btn prev" onclick="moveLightbox(-1)">‹</button>
+                <button class="lightbox-btn next" onclick="moveLightbox(1)">›</button>
+            </div>
+            <div class="lightbox-indicators" id="lightboxIndicators"></div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>2025 Abhinav Tomar</p>
+    </footer>
+
+    <script>
+        // Initialize carousel indices for each project
+        const carouselStates = {};
+
+        // Initialize all carousels on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousels = document.querySelectorAll('.project-carousel');
+            carousels.forEach(carousel => {
+                const projectId = carousel.dataset.project;
+                carouselStates[projectId] = { currentIndex: 0 };
+                
+                // Create indicators
+                const track = carousel.querySelector('.carousel-track');
+                const slides = track.querySelectorAll('.carousel-slide');
+                const indicatorContainer = carousel.querySelector('.carousel-indicators');
+                
+                slides.forEach((_, index) => {
+                    const indicator = document.createElement('div');
+                    indicator.className = 'indicator' + (index === 0 ? ' active' : '');
+                    indicator.onclick = (e) => {
+                        e.stopPropagation();
+                        goToSlide(carousel, index);
+                    };
+                    indicatorContainer.appendChild(indicator);
+                });
+
+                // Add click to open lightbox
+                carousel.onclick = (e) => {
+                    if (!e.target.closest('.carousel-btn') && !e.target.closest('.indicator')) {
+                        openLightbox(carousel);
+                    }
+                };
+            });
+        });
+
+        function moveCarousel(event, button, direction) {
+            event.stopPropagation();
+            const carousel = button.closest('.project-carousel');
+            const projectId = carousel.dataset.project;
+            const track = carousel.querySelector('.carousel-track');
+            const slides = track.querySelectorAll('.carousel-slide');
+            
+            let newIndex = carouselStates[projectId].currentIndex + direction;
+            
+            if (newIndex < 0) newIndex = slides.length - 1;
+            if (newIndex >= slides.length) newIndex = 0;
+            
+            goToSlide(carousel, newIndex);
+        }
+
+        function goToSlide(carousel, index) {
+            const projectId = carousel.dataset.project;
+            const track = carousel.querySelector('.carousel-track');
+            const slides = track.querySelectorAll('.carousel-slide');
+            const indicators = carousel.querySelectorAll('.indicator');
+            
+            carouselStates[projectId].currentIndex = index;
+            track.style.transform = `translateX(-${index * 100}%)`;
+            
+            indicators.forEach((ind, i) => {
+                ind.classList.toggle('active', i === index);
+            });
+        }
+
+        // Lightbox functionality
+        let currentLightboxImages = [];
+        let currentLightboxIndex = 0;
+
+        function openLightbox(carousel) {
+            const lightbox = document.getElementById('lightbox');
+            const track = carousel.querySelector('.carousel-track');
+            const slides = track.querySelectorAll('.carousel-slide img');
+            const projectId = carousel.dataset.project;
+            
+            currentLightboxImages = Array.from(slides).map(img => img.src);
+            currentLightboxIndex = carouselStates[projectId].currentIndex;
+            
+            renderLightbox();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function renderLightbox() {
+            const track = document.getElementById('lightboxTrack');
+            const indicatorContainer = document.getElementById('lightboxIndicators');
+            
+            track.innerHTML = '';
+            indicatorContainer.innerHTML = '';
+            
+            currentLightboxImages.forEach((src, index) => {
+                const slide = document.createElement('div');
+                slide.className = 'lightbox-slide';
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = `Image ${index + 1}`;
+                slide.appendChild(img);
+                track.appendChild(slide);
+                
+                const indicator = document.createElement('div');
+                indicator.className = 'indicator' + (index === currentLightboxIndex ? ' active' : '');
+                indicator.onclick = () => goToLightboxSlide(index);
+                indicatorContainer.appendChild(indicator);
+            });
+            
+            track.style.transform = `translateX(-${currentLightboxIndex * 100}%)`;
+        }
+
+        function moveLightbox(direction) {
+            currentLightboxIndex += direction;
+            
+            if (currentLightboxIndex < 0) currentLightboxIndex = currentLightboxImages.length - 1;
+            if (currentLightboxIndex >= currentLightboxImages.length) currentLightboxIndex = 0;
+            
+            goToLightboxSlide(currentLightboxIndex);
+        }
+
+        function goToLightboxSlide(index) {
+            currentLightboxIndex = index;
+            const track = document.getElementById('lightboxTrack');
+            const indicators = document.querySelectorAll('#lightboxIndicators .indicator');
+            
+            track.style.transform = `translateX(-${index * 100}%)`;
+            indicators.forEach((ind, i) => {
+                ind.classList.toggle('active', i === index);
+            });
+        }
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') moveLightbox(-1);
+            if (e.key === 'ArrowRight') moveLightbox(1);
+        });
+
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
+        });
+    </script>
+    
 
     <script src="script.js"></script>
 

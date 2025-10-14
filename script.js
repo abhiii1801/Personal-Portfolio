@@ -121,3 +121,13 @@
                 element.style.transform = `translateY(${scrolled * speed}px)`;
             });
         });
+
+
+        function openCertPopup(src) {
+    document.getElementById('cert-popup-img').src = src;
+    document.getElementById('cert-popup').style.display = 'flex';
+}
+
+function closeCertPopup() {
+    document.getElementById('cert-popup').style.display = 'none';
+}

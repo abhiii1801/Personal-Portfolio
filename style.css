@@ -1115,6 +1115,49 @@ footer p {
     font-size: 1.05rem;
 }
 
+.cert-thumb {
+    width: 160px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.cert-thumb:hover {
+    transform: scale(1.1);
+}
+
+/* Popup overlay */
+.cert-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cert-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px; right: 40px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Responsive Design for About Page */
 @media (max-width: 1024px) {
     .about-details-grid {
